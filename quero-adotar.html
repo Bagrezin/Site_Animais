@@ -3,21 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quero Adotar - Vida de Bicho</title>
+    <title>Quero adotar - Vida de Bicho</title>
     <style>
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f7f7f7;
             color: #4b2e83;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+            background-image: url(img/Fundo1.png);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        h1 {
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #bacdcf; 
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .logo img {
+            height: 100px; 
+            margin-left: 10px;
+        }
+
+        header nav a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px; 
+            border: 2px solid #718688; 
+            border-radius: 8px; 
+            background-color: #718688; 
+            transition: background-color 0.3s, color 0.3s; 
+        }
+
+        nav a:hover {
+            background-color: #415658; 
+            color: #fff; 
+        }  
+
+        main {
+            padding: 100px 20px;
+            flex: 1;
+        }
+
+        h3 {
+            text-align: center;
+            background-color: #718688;
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 10%;
+            margin: 0 auto 20px auto;
+        }
+
+        .shadow-box {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        
+        .large-text {
+            font-size: 18px; 
+        }
+
+        footer {
+            background-color: #bacdcf; 
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+        
+        footer a {
             color: #4b2e83;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <h1>Quero Adotar</h1>
-    <p></p>
+    <header>
+        <div class="logo">
+            <img src="img/Vida de Bicho.png" alt="Logo do Site">
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="quem-somos.html">Quem somos</a>
+            <a href="quero-adotar.html">Quero adotar</a>
+            <a href="parcerias.html">Parcerias</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <h3>Quero adotar</h3>
+        <div class="shadow-box">
+            <p class="large-text">
+                
+                    Adotar um animal é um ato de amor e empatia que transforma vidas, tanto a do bichinho quanto a do adotante. 
+                    Ao abrir as portas do seu lar para um animal em busca de uma segunda chance, você está oferecendo a ele 
+                    um futuro cheio de carinho, segurança e felicidade. Além disso, adotar contribui para a redução do número 
+                    de animais abandonados e apoia organizações dedicadas ao bem-estar animal. <br> <br> 
+              
+                
+              
+                    Existem diversos sites confiáveis que ajudam a conectar futuros tutores a pets que esperam por um lar amoroso. Confira algumas opções: <br> </br>
+                
+                
+                    <a href="http://www.adoteumgatinho.com.br" target="_blank">Adote Um Gatinho</a>: Uma das principais ONGs voltadas à adoção de gatos no Brasil. </a> <br><br>
+                    <a href="http://www.olharanimal.org" target="_blank">Olhar Animal</a>: Uma organização que promove adoção responsável e proteção animal.</a> <br><br>
+                    <a href="http://www.sosgatinhos.com.br" target="_blank">SOS Gatinhos</a>: Focada no resgate e adoção de gatinhos em situação de risco.</a> <br><br>
+                    <a href="http://www.ciadobicho.com.br" target="_blank">Cia do Bicho</a>: Plataforma que facilita o encontro entre adotantes e pets em busca de um lar.</a> <br><br>
+                    <a href="http://www.eobicho.org" target="_blank">EO Bicho</a>: Entidade em Florianópolis que trabalha pela proteção animal e adoção responsável.</a> <br><br>
+                    <a href="https://www.amigonaosecompra.com.br" >Amigo Não Se Compra</a>: Uma plataforma dedicada a conectar animais resgatados a famílias amorosas.</a> <br><br>
+                    <a href="https://adotar.com.br" target="_blank">Adotar</a>: Um portal que facilita a busca por cães e gatos disponíveis para adoção.</a> <br><br>
+                    <a href="https://www.adotepetz.com.br" target="_blank">Adote Petz</a>: Promove a adoção responsável de animais em todo o Brasil.</a> <br><br>
+                
+                
+                
+                    Adotar é mais que um gesto de bondade, é um compromisso de cuidado e amor ao longo da vida do pet. 
+                    Cada animal adotado é um ser único, com sua história e seu potencial para trazer alegria e companheirismo. <br><br>
+                
+                
+                <strong>Venha fazer parte desse movimento transformador. Dê uma segunda chance a quem só precisa de uma oportunidade para amar e ser amado. 🐾</strong>
+                
+                
+                
+                
+                
+                
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vida de Bicho. Todos os direitos reservados.</p>
+        <p>Contato: contatovidadebicho@outlook.com.br | Telefone: (11) 9755-4797</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61569731733740">Facebook</a> | 
+            <a href="https://www.instagram.com/lifesbichos/">Instagram</a> | 
+            <a href="https://x.com/Vida_De_Bicho">Twitter</a>
+        </div>
+    </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

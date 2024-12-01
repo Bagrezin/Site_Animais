@@ -5,19 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcerias - Vida de Bicho</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f7f7f7;
             color: #4b2e83;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+            background-image: url(img/Fundo1.png);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        h1 {
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #bacdcf; 
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .logo img {
+            height: 100px; 
+            margin-left: 10px;
+        }
+
+        header nav a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px; 
+            border: 2px solid #718688; 
+            border-radius: 8px; 
+            background-color: #718688; 
+            transition: background-color 0.3s, color 0.3s; 
+        }
+
+        nav a:hover {
+            background-color: #415658; 
+            color: #fff; 
+        }  
+
+        main {
+            padding: 100px 20px;
+            flex: 1;
+        }
+
+        h3 {
+            text-align: center;
+            background-color: #718688;
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 10%;
+            margin: 0 auto 20px auto;
+        }
+
+        .shadow-box {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .large-text {
+            font-size: 18px; 
+        }
+        
+
+        footer {
+            background-color: #bacdcf; 
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+        
+        footer a {
             color: #4b2e83;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <h1>Parcerias</h1>
-    <p></p>
+    <header>
+        <div class="logo">
+            <img src="img/Vida de Bicho.png" alt="Logo do Site">
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="quem-somos.html">Quem somos</a>
+            <a href="quero-adotar.html">Quero adotar</a>
+            <a href="parcerias.html">Parcerias</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <h3>Parcerias</h3>
+        <div class="shadow-box">
+            <p class="large-text">
+                
+                Estamos sempre em busca de parcerias com organizações, empresas e pessoas que compartilhem da nossa missão de transformar a vida de animais em situação de rua.<br> 
+                 
+                Acreditamos que juntos somos mais fortes e que, com a colaboração de diferentes pessoas e instituições, podemos criar um impacto ainda maior na vida de muitos animais que precisam de um lar cheio de amor e cuidado.<br>
+                     
+                Se você está interessado em se juntar a nós nessa jornada, seja como parceiro ou apoiador, entre em contato. Vamos trabalhar juntos para construir um futuro mais solidário e cheio de oportunidades para todos os animais.<br>
+                                 
+                Venha fazer parte dessa história e ajude-nos a mudar vidas para melhor! 🐾
+                                        
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vida de Bicho. Todos os direitos reservados.</p>
+        <p>Contato: contatovidadebicho@outlook.com.br | Telefone: (11) 9755-4797</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61569731733740">Facebook</a> | 
+            <a href="https://www.instagram.com/lifesbichos/">Instagram</a> | 
+            <a href="https://x.com/Vida_De_Bicho">Twitter</a>
+        </div>
+    </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

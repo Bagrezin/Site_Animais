@@ -15,12 +15,9 @@
             font-family: Arial, sans-serif;
             color: #4b2e83;
             background-color: #f7f7f7;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-size: cover;
-            background-position: center; 
-            background-image: url("img/Design\ sem\ nome.png");
+            margin: 0;
+            padding: 0;
+            background-image: url(img/Fundo1.png);
         }
 
         header {
@@ -47,13 +44,24 @@
             margin: 0 10px;
             color: #fff;
             text-decoration: none;
+            padding: 8px 16px; 
+            border: 2px solid #718688; 
+            border-radius: 8px; 
+            background-color: #718688; 
+            transition: background-color 0.3s, color 0.3s; 
         }
 
+        nav a:hover {
+            background-color: #415658; 
+            color: #fff; 
+            }
+
         .button {
-            padding: 8px 16px;
-            border-radius: 4px;
-            border: 1px solid #fff;
-            color: #fff;
+            padding: 8px 16px; 
+            border: 2px solid #718688; 
+            border-radius: 8px; 
+            background-color: #718688; 
+            transition: background-color 0.3s, color 0.3s; 
         }
 
         .button.primary {
@@ -105,26 +113,28 @@
         }
 
         .animal-card img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
+            width: 150px; 
+            height: 150px;
+            object-fit: cover; 
             border-radius: 8px;
             margin-right: 20px;
         }
 
-        .animal-info h4 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #4b2e83;
+        .animal-info {
+            display: flex;
+            flex-direction: column; 
+            gap: 10px; 
         }
 
         .animal-info p {
-            margin: 5px 0;
+            margin: 0;
+            font-size: 16px;
             color: #333;
         }
 
         .animal-info p strong {
-            color: #4b2e83;
+            font-weight: bold;
+            color: #4b2e83; 
         }
 
         footer {
@@ -140,7 +150,7 @@
         }
 
         .social-links a {
-            color: #fff;
+            color: #4b2e83;
             margin: 0 10px;
             text-decoration: none;
         }
@@ -153,17 +163,17 @@
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="D:\Downloads\Vida de Bicho.png" alt="Logo do Site">
-        </div>
-        <nav>
-            <a href="quem-somos.html">Quem somos</a>
-            <a href="quero-adotar.html">Quero adotar</a>
-            <a href="parcerias.html">Parcerias</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
+<header>
+    <div class="logo">
+        <img src="img/Vida de Bicho.png" alt="Logo do Site">
+    </div>
+    <nav>
+        <a href="quem-somos.html">Quem somos</a>
+        <a href="quero-adotar.html">Quero adotar</a>
+        <a href="parcerias.html">Parcerias</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
 
     <section class="banner">
         <div class="stats">
@@ -173,65 +183,65 @@
         </div>
     </section>
 
-    <section class="new-animals">
-        <h3>Novos amigos disponíveis</h3>
-        <p>Esses animais estão aguardando para receber cuidado e encontrar um novo lar. Confira e venha conhecer!</p>
-    
-        <div class="animal-card">
-            <img src="https://www.doglife.com.br/blog/assets/post/gato-filhote-tudo-que-voce-precisa-saber-para-cuidar-bem-61aa5b4f5448461cf9e0a54b/filhote-capa.jpg.jpg" alt="Gatinho 1"> 
-            <div class="animal-info">
-                <h4>Nome: </h4>
-                <p><strong>Situação:</strong> </p>
-                <p><strong>Local onde foi encontrado:</strong> </p>
-            </div>
-        </div>
-    
-        <div class="animal-card">
-            <img src="https://www.doglife.com.br/blog/assets/post/gato-filhote-tudo-que-voce-precisa-saber-para-cuidar-bem-61aa5b4f5448461cf9e0a54b/filhote-capa.jpg.jpg" alt="Gatinho 2">
-            <div class="animal-info">
-                <h4>Nome: </h4>
-                <p><strong>Situação:</strong> </p>
-                <p><strong>Local onde foi encontrado:</strong> </p>
-            </div>
-        </div>
-    
-        <div class="animal-card">
-            <img src="https://www.doglife.com.br/blog/assets/post/gato-filhote-tudo-que-voce-precisa-saber-para-cuidar-bem-61aa5b4f5448461cf9e0a54b/filhote-capa.jpg.jpg" alt="Gatinho 3">
-            <div class="animal-info">
-                <h4>Nome: </h4>
-                <p><strong>Situação:</strong> </p>
-                <p><strong>Local onde foi encontrado:</strong> </p>
-            </div>
-        </div>
-    
-        <div class="animal-card">
-            <img src="https://www.doglife.com.br/blog/assets/post/gato-filhote-tudo-que-voce-precisa-saber-para-cuidar-bem-61aa5b4f5448461cf9e0a54b/filhote-capa.jpg.jpg" alt="Cachorro 1">
-            <div class="animal-info">
-                <h4>Nome: </h4>
-                <p><strong>Situação:</strong> </p>
-                <p><strong>Local onde foi encontrado:</strong> </p>
-            </div>
-        </div>
-    
-        <div class="animal-card">
-            <img src="https://www.doglife.com.br/blog/assets/post/gato-filhote-tudo-que-voce-precisa-saber-para-cuidar-bem-61aa5b4f5448461cf9e0a54b/filhote-capa.jpg.jpg" alt="Cachorro 2">
-            <div class="animal-info">
-                <h4>Nome: </h4>
-                <p><strong>Situação:</strong> </p>
-                <p><strong>Local onde foi encontrado:</strong> </p>
-            </div>
-        </div>
+<section class="new-animals">
+    <h3>Novos amigos disponíveis</h3>
+    <p>Esses animais estão aguardando para receber cuidado e encontrar um novo lar. Confira e venha conhecer!</p>
 
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Vida de Bicho. Todos os direitos reservados.</p>
-        <p>Contato: contato@vidadebicho.com | Telefone: (11) 1234-5678</p>
-        <div class="social-links">
-            <a href="#">Facebook</a> | 
-            <a href="#">Instagram</a> | 
-            <a href="#">Twitter</a>
+    <div class="animal-card">
+        <img src="Animais/dog1.jpg" alt="Cachorro">
+        <div class="animal-info">
+            <p><strong>Nome:</strong> Bidu</p>
+            <p><strong>Situação:</strong> Animal SRD, sem apresentar comportamentos raivosos e sem machucados aparentes.</p>
+            <p><strong>Local onde foi encontrado:</strong> Av. Francisco Rodrigues Filho, Mogi Das Cruzes.</p>
         </div>
-    </footer>
+    </div>
+
+    <div class="animal-card">
+        <img src="Animais/dog2.jpeg" alt="Cachorro">
+        <div class="animal-info">
+            <p><strong>Nome:</strong> Zeus</p>
+            <p><strong>Situação:</strong> Animal SRD, apresentando comportamento raivoso e pata traseira esquerda machucada.</p>
+            <p><strong>Local onde foi encontrado:</strong> Av. José Maria de Albuquerque Freitas, Mogi Das Cruzes.</p>
+        </div>
+    </div>
+
+    <div class="animal-card">
+        <img src="Animais/dog3.jpeg" alt="Cachorro">
+        <div class="animal-info">
+            <p><strong>Nome:</strong> Caramelo</p>
+            <p><strong>Situação:</strong> Animal SRD, muito dócil e sem machucados aparentes.</p>
+            <p><strong>Local onde foi encontrado:</strong> R. Joaquina Maria de Jesus, Mogi Das Cruzes.</p>
+        </div>
+    </div>
+
+    <div class="animal-card">
+        <img src="Animais/dog4.jpeg" alt="Cachorro">
+        <div class="animal-info">
+            <p><strong>Nome:</strong> Otávio</p>
+            <p><strong>Situação:</strong> Animal SRD, amigável, porém necessita de alimentação e água.</p>
+            <p><strong>Local onde foi encontrado:</strong> Av. Dr. Cândido X. de Almeida e Souza, Mogi Das Cruzes.</p>
+        </div>
+    </div>
+
+    <div class="animal-card">
+        <img src="Animais/cat1.jpeg" alt="Gato">
+        <div class="animal-info">
+            <p><strong>Nome:</strong> Não definido</p>
+            <p><strong>Situação:</strong> Sexo desconhecido, animal arisco e sem machucados aparentes.</p>
+            <p><strong>Local onde foi encontrado:</strong> R. Antônio Cândido Viêira, Mogi Das Cruzes.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Vida de Bicho. Todos os direitos reservados.</p>
+    <p>Contato: contatovidadebicho@outlook.com.br | Telefone: (11) 9755-4797</p>
+    <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=61569731733740">Facebook</a> | 
+        <a href="https://www.instagram.com/lifesbichos/">Instagram</a> | 
+        <a href="https://x.com/Vida_De_Bicho">Twitter</a>
+    </div>
+</footer>
+
 </body>
 </html>
